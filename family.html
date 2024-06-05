@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head><title>Family Members</title>
+
+<link rel="stylesheet" type="text/css"href="resource/css/style.css">
+
+</head>
+
+<body>
+<header>
+<a href="index.html">
+<img src="resource/image/uwlogonobg.png" alt="UM: Glimpses of My World" width="25%"hspace="500px"align="center"title="UM: Glimpses of My World">
+</a>
+</header>
+
+<hr>
+<nav>
+<table cellspacing="6" cellpadding="6">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="myself.html">Myself</a></td>
+<td><a href="interests.html">Interests</a></td>
+<td><a href="family.html">Family</a></td>
+<td><a href="friends.html">Friends</a></td>
+<td><a href="education.html">Education</a></td>
+<td><a href="future.html">Future</a></td>
+</tr>
+</table>
+</nav>
+<hr>
+
+<p class="title">MEET MY BIG FAMILY</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="resource/image/parents.png" style="width:100%">
+  <div class="text">My Parents</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="resource/image/family(1).png" style="width:100%">
+  <div class="text">KakYong</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="resource/image/family(2).png" style="width:100%">
+  <div class="text">KakNgah</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="resource/image/family(3).png" style="width:100%">
+  <div class="text">KakChik</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="resource/image/family(4).png" style="width:100%">
+  <div class="text">Abang</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="resource/image/family(5).png" style="width:100%">
+  <div class="text">Ateh</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="resource/image/family(6).png" style="width:100%">
+  <div class="text">Me</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="resource/image/family(7).png" style="width:100%">
+  <div class="text">Abid</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="resource/image/family(8).png" style="width:100%">
+  <div class="text">Waffa</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="resource/image/family(9).png" style="width:100%">
+  <div class="text">Adik</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p class="subtitle">In the symphony of existence, family stands as the gentle refrain, an ever-present melody that weaves through the fabric of my being. They are the sturdy oaks in the garden of my soul, their roots intertwined with mine, grounding me in love's fertile soil. Each member, a constellation of memories and laughter, their warmth a beacon guiding me through life's darkest nights. Together, we dance to the rhythm of shared experiences, harmonizing our joys and sorrows in a timeless embrace. For in the embrace of family, I find sanctuary, a haven where acceptance reigns and bonds grow stronger with each passing breath. They are not merely blood ties, but the very essence of home, the sacred hymn that sings of belonging and belonging alone.</p>
+
+
+<hr>
+<footer>
+
+<a href="https://www.instagram.com/mairahwajie/" target="_blank" class="social-link">
+    <img src="resource/image/instagramlogonobg.png" alt="My Instagram profile" class="social-logo">
+</a>
+
+<a href="https://twitter.com/hobertbby" target="_blank" class="social-link">
+    <img src="resource/image/TwitterLogonobg.png" alt="My Twitter profile" class="social-logo">
+</a>
+
+<a href="https://www.tiktok.com/@mrwjmhxx?lang=en" target="_blank" class="social-link">
+    <img src="resource/image/logotiktoknobg.png" alt="My Tiktok profile" class="social-logo">
+</a>
+
+<br />
+Copyright &copy UmairahWajiehah 2024
+</footer>
+
+</body>
+</html>
